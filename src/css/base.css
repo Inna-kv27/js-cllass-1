@@ -1,0 +1,57 @@
+:root {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+
+  --color-background: #1C1D20;
+  --color-cards: #242527;
+  --color-arrow: #3B3B3B;
+  --color-button: #ED3B44;
+  --color-button-active: #E0373F;
+  --color-text: #FAFAFA;
+  --color-text-tr: rgba(250, 250, 250, 0.60); /*60%* прозорості*/
+  --color-text-title: rgba(250, 250, 250, 0.40); /*40% прозорості*/
+  --color-border: rgba(250, 250, 250, 0.20); /*20% прозорості*/
+  --color-border-icon: rgba(250, 250, 250, 0.50);
+  --color-hashtags: rgba(28, 29, 32, 0.20);
+  --color-valid-email: #3CBC81;
+  --color-invalid-email: #E74A3B;
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-tight-v7-latin-500.woff2') format('woff2'), 
+       url('../fonts/inter-tight-v7-latin-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-tight-v7-latin-600.woff2') format('woff2'),
+       url('../fonts/inter-tight-v7-latin-600.ttf') format('truetype');
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
